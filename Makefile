@@ -20,10 +20,10 @@ ifndef debug
 #
 # as usual, list the objects
 #
-OBJECTS = 1-s2.0-S0022407316300127-mmc3.o
+OBJECTS = rkr.o
 
 fit: $(OBJECTS)
-	$(FC) $(FFLAGS) $(OBJECTS) -o 1-s2.0-S0022407316300127-mmc3.x
+	$(FC) $(FFLAGS) $(OBJECTS) -o rkr.x
 # To run the code, execute:
 # ./level.x < input.5 > fort.6
 
