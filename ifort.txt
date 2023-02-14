@@ -1,0 +1,10 @@
+/cvmfs/restricted.computecanada.ca/easybuild/software/2020/Core/intel/2020.1.217/compilers_and_libraries_2020.1.217/linux/bin/intel64/ifort
+
+ifort -O2               -c -o 1-s2.0-S0022407316300127-mmc3.o 1-s2.0-S0022407316300127-mmc3.f
+1-s2.0-S0022407316300127-mmc3.f(583): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+     1 '   tst(f)/(previous)=',1Pd8.1,'/',d7.1,'   tst(g)/(previous)=',
+-------------------------------------------^
+1-s2.0-S0022407316300127-mmc3.f(584): remark #8291: Recommended relationship between field width 'W' and the number of fractional digits 'D' in this edit descriptor is 'W>=D+7'.
+     2 d8.1,'/',d7.1)
+-----------------^
+ifort -O2              1-s2.0-S0022407316300127-mmc3.o -o 1-s2.0-S0022407316300127-mmc3.x
