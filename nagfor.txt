@@ -28,11 +28,3 @@ Obsolescent: rkr.f: Fixed source form
 nagfor -O2              rkr.o -o rkr.x
 NAG Fortran Compiler Release 7.1(Hanzomon) Build 7114
 Evaluation trial version of NAG Fortran Compiler Release 7.1(Hanzomon) Build 7114
-rkr.o: In function `ndedkm_':
-rkr.003512.c:(.text+0x106): undefined reference to `dfloat_'
-rkr.o: In function `MAIN':
-rkr.003512.c:(.text+0x277d): undefined reference to `dfloat_'
-rkr.003512.c:(.text+0x4924): undefined reference to `dfloat_'
-collect2: error: ld returned 1 exit status
-Makefile:27: recipe for target 'fit' failed
-make: *** [fit] Error 1

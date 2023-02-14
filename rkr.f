@@ -129,7 +129,7 @@ c----------------------------------------------------------------------
           READ(5,*) NAME2, MASS2
 c----------------------------------------------------------------------
         ENDIF
-      ZMU= (MASS1*MASS2)/(MASS1+MASS2 - DFLOAT(CHARGE)*ZMASE)
+      ZMU= (MASS1*MASS2)/(MASS1+MASS2 - DBLE(CHARGE)*ZMASE)
 c** Numerical factor  16.857629206 (+/- 0.000,000,013) based on Compton
 c  wavelength of proton & proton mass (u) from 2011 physical constants.
       CU= 16.857629206d0/ZMU
@@ -366,7 +366,7 @@ c  bisections of the interval.
               VFN= V00
               FF= 0.d0
               GG= 0.d0
-              RANGE= (VUP-V00)/DFLOAT(NDIV)
+              RANGE= (VUP-V00)/DBLE(NDIV)
 c** Sum over contributions from the NDIV segments of the interval
               DO  IDIV= 1,NDIV
                   VST= VFN
@@ -699,7 +699,7 @@ c-----------------------------------------------------------------------
       REAL*8 KM,DKM,XCN,DLIM,VD,P(NP),Q(NQ), PW,PAB,DV,DVP,SMN,SMD,DSMN,
      1  DSMD,VV
       IPW= 2*NLR/(NLR-2)
-      PW= 2.d0*NLR/(DFLOAT(NLR)- 2.d0)
+      PW= 2.d0*NLR/(DBLE(NLR)- 2.d0)
       IF(KORDR.GE.1) THEN
           IPW= IPW - 2*KORDR
           PW= PW - 2.d0*KORDR
