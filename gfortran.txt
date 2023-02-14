@@ -1,2 +1,4 @@
+/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/gcccore/9.3.0/bin/gfortran
+
 gfortran       -O2               -c -o 1-s2.0-S0022407316300127-mmc3.o 1-s2.0-S0022407316300127-mmc3.f
 gfortran       -O2              1-s2.0-S0022407316300127-mmc3.o -o 1-s2.0-S0022407316300127-mmc3.x

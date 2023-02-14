@@ -1,8 +1,9 @@
 # option to select compiler (intel 'ifort', or SUN 'f77', 'f90 or f95)
 #   as in :   make FC=ifort
 ifndef $FC
+   FC = nagfor
 #  FC = f90             
-   FC = gfortran      
+#  FC = gfortran      
 #  FC = ifort
 endif
 #
